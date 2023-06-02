@@ -60,7 +60,7 @@ def rpsls(player_choice):
     if (player_number == comp_number):
         print "Player and computer tie!"
     else:
-        if player_number + 1 == comp_number or player_number + 2 == comp_number:
+        if (player_number + 1) % 5 == comp_number or (player_number + 2) % 5 == comp_number:
             print "Computer wins!"
         else:
             print "Player wins!"
